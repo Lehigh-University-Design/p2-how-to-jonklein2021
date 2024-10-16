@@ -18,12 +18,12 @@
 	<body>
 		<div id="landing" class="step">
 			<img src="assets/board200.png" alt="board" style="width: 40%" />
-            <div style="width: 133px"></div>
+			<div style="width: 133px"></div>
 			<div>
 				<h1 style="font-size: 128px">Chess.</h1>
 				<h2>A Timeless Game</h2>
 			</div>
-            <div class="scroll_indicator"></div>
+			<div class="scroll_indicator"></div>
 		</div>
 		<div class="step">
 			<div class="left">
@@ -33,18 +33,15 @@
 					To get started, you'll need a chess board and a friend (optional).
 					<br>
 					<br>
-					In chess, players alternate turns, with the player controlling the
-					white pieces always starting first. This continues until a player wins
-					or a draw occurs. There are many ways that chess games can end, but
-					most commonly, somebody wins by checkmate or both players agree to a
-					draw.
+					In chess, players alternate turns, the player with the white pieces
+					always starting first. This continues until a player wins or they
+					draw. To begin, set up your the board as shown in the image. draw.
 					<br>
 					<br>
-					We'll explain checkmate in more detail later. For now, let's explore
-					how each piece moves.
+					We'll see how end in my detail later. For now, let's explore how each
+					piece moves.
 				</p>
 			</div>
-            <div style="width: 30px"></div>
 			<div class="right">
 				<img src="assets/board200.png" alt="board" style="width: 40vw" />
 			</div>
@@ -54,39 +51,154 @@
 				<h1>The Pawn.</h1>
 				<h2>Small, Yet Mighty</h2>
 				<p>
-					The pawn is the most basic piece with simple movement rules:
-					<br>
-					<br>
-					Each pawn can only move forward, one square at a time, except on its
+					The pawn is the most basic chess piece. Each pawn can  move forward one square at a time, except on its
 					very first move where it has the option to move two squares forward.
 					<br>
 					<br>
-					Pawns may capture enemy pieces directly diagonally in front of them,
-					taking their place.
+					Pawns may capture enemy pieces directly diagonally in front of them, taking their place.
 					<br>
 					<br>
 					When a pawn reaches the opposite end of the board, it is promoted to
 					any other piece (except a king), usually a queen.
 				</p>
 			</div>
-            <div style="width: 30px"></div>
 			<div class="right">
 				<iframe
+					name="iframe1"
 					id="12287437"
 					allowtransparency="true"
 					frameborder="0"
-					style="width: 100%; border: none"
+					style="border: none"
 					src="//www.chess.com/emboard?id=12287437"
 				></iframe>
 				<script>
-					window.addEventListener("message", e => {
+					window.onload = () => {
+						frames["iframe1"].document.getElementsByClassName(
+							"embed-diagrams-play-at-chess"
+						)[0].style.display = "none";
+					};
+
+					window.addEventListener("message", (e) => {
 						e["data"] &&
 							"12287437" === e["data"]["id"] &&
 							document.getElementById(`${e["data"]["id"]}`) &&
-							(document.getElementById(`${e["data"]["id"]}`).style.height = `${e["data"]["frameHeight"] + 37}px`) &&
-                            (document.getElementsByClassName("embed-diagrams-play-at-chess")[0].style.display = 'none');
+							(document.getElementById(`${e["data"]["id"]}`).style.height = `${
+								e["data"]["frameHeight"] + 37
+							}px`) &&
+							(document.getElementsByClassName(
+								"embed-diagrams-play-at-chess"
+							)[0].style.display = "none");
 					});
 				</script>
+			</div>
+		</div>
+		<div class="step">
+			<div class="left">
+				<iframe
+					id="12290825"
+					allowtransparency="true"
+					frameborder="0"
+					style="border: none"
+					src="//www.chess.com/emboard?id=12290825"
+				></iframe>
+				<script>
+					window.addEventListener("message", (e) => {
+						e["data"] &&
+							"12290825" === e["data"]["id"] &&
+							document.getElementById(`${e["data"]["id"]}`) &&
+							(document.getElementById(`${e["data"]["id"]}`).style.height = `${
+								e["data"]["frameHeight"] + 37
+							}px`);
+					});
+				</script>
+			</div>
+			<div class="right">
+				<h1>The Knight.</h1>
+				<h2>The Trickster of the Board</h2>
+				<p>
+					A knight moves in an L-shape: two squares in one direction (either
+					horizontally or vertically) and then one square perpendicular, or vice
+					versa. It captures enemy pieces by landing on their square.
+					<br>
+					<br>
+					Another unique property about the knight is that it is the only piece that can jump over other pieces.
+					<br>
+					<br>
+					Try to solve the puzzle on the left - can you think of a knight move that captures a piece and checkmates the king?
+				</p>
+			</div>
+		</div>
+		<div class="step">
+			<div class="left">
+				<h1>The Rook.</h1>
+				<h2>Strength in Simplicity</h2>
+				<p>
+					A rook can move any number of squares along a row or column, but it cannot jump over other pieces. It can capture an enemy piece by moving into its square.
+					<br>
+					<br>
+					Along with the king, a rook can participate in castling, a special move that improves the king's safety. We'll show how to do this in a later section.
+					<br>
+					<br>
+					Try the puzzle on the right - can you find winning rook moves that capture material and win the game?
+				</p>
+			</div>
+			<div class="right">
+				<iframe id="12291221" allowtransparency="true" frameborder="0" style="border:none;" src="//www.chess.com/emboard?id=12291221"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12291221"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+37}px`)});</script>
+			</div>
+		</div>
+		<div class="step">
+			<div class="left">
+				<iframe id="12291259" allowtransparency="true" frameborder="0" style="border:none;" src="//www.chess.com/emboard?id=12291259"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12291259"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+37}px`)});</script>
+			</div>
+			<div class="right">
+				<h1>The Bishop.</h1>
+				<h2>Long-Range Diagonal Mastery</h2>
+				<p>
+					A bishop can move any number of squares diagonally, but it cannot jump over other pieces. It captures an enemy piece by moving into its square.
+					<br>
+					<br>
+					Notice that it is restricted to the color of the square it starts on (either light or dark) for the entire game, as no diagonal path can cross between the two colors.
+					<br>
+					<br>
+					Try the puzzle on the left - can you find a sneaky bishop move that checkmates the king?
+				</p>
+			</div>
+		</div>
+		<div class="step">
+			<div class="left">
+				<h1>The Queen.</h1>
+				<h2>The Powerhouse</h2>
+				<p>
+					The queen is the most powerful piece on the board; it can move like a bishop and a rook.
+					<br>
+					<br>
+					A queen can move any number of squares in any direction — vertically, horizontally, or diagonally, but cannot jump over pieces. It captures by moving into the square of an enemy piece.
+					<br>
+					<br>
+					Try the puzzle on the right - can you find the quickest way for the queen to capture all the pawns?
+				</p>
+			</div>
+			<div class="right">
+				<iframe id="12291289" allowtransparency="true" frameborder="0" style="border:none;" src="//www.chess.com/emboard?id=12291289"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12291289"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+37}px`)});</script>
+			</div>
+		</div>
+		<div class="step">
+			<div class="left">
+				<iframe id="12291329" allowtransparency="true" frameborder="0" style="border:none;" src="//www.chess.com/emboard?id=12291329"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12291329"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+37}px`)});</script>
+			</div>
+			<div class="right">
+				<h1>The King.</h1>
+				<h2>The Heart of the Game</h2>
+				<p>
+					Similar to the queen, the king can move in any direction — vertically, horizontally, or diagonally. However, it can only do so one square at a time. It captures pieces by moving into that square.
+					The king can also perform castling with a rook, moving two squares towards the rook, while the rook moves to the square the king passed through.
+					<br>
+					<br>
+					The game ends in checkmate if the king is unable to escape a threat of capture.
+					<br>
+					<br>
+					Try the puzzle on the left - can you catch up to the black pawn before it promotes?
+				</p>
 			</div>
 		</div>
 	</body>
