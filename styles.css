@@ -14,14 +14,14 @@ h1 {
 	font-family: "Abril Fatface", serif;
 	font-weight: lighter;
 	font-size: 96px;
-	margin: 0 0 0 -5px;
+	margin: 0 0 5px -5px;
 }
 
 h2 {
 	font-family: "Playfair Display", serif;
 	font-weight: lighter;
 	font-size: 36px;
-	margin: auto;
+	margin: 0 0 10px 0;
 }
 
 p {
@@ -85,7 +85,11 @@ body {
 .left, .right {
 	width: calc(50% - 20px);
 	height: 100%;
-	padding: auto;
+	padding-top: 5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
 }
 
 .left {
@@ -112,16 +116,21 @@ iframe {
 .sidebar {
 	position: fixed;
 	left: 0;
-	top: 50%;
+	top: 0;
 	z-index: 1000;
 	width: 55px;
 	height: 100%;
-	display: none;
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	transform: translateY(-50%);
+	transform: translateX(-100%);
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.active {
+    transform: translateX(0);
 }
 
 .sidebar_child {

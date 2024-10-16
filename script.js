@@ -30,10 +30,10 @@ window.addEventListener("scroll", () => {
     if (window.scrollY > 626) {
         // hide the scroll indicator & show the sidebar when scrolling past 628px
         scrollIndicator.style.display = "none";
-        sidebar.style.display = "flex";
+        sidebar.classList.add('active');
     } else {
         scrollIndicator.style.display = "block";
-        sidebar.style.display = "none";
+        sidebar.classList.remove('active');
     }
 
 });
