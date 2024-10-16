@@ -12,7 +12,9 @@
 			rel="stylesheet"
 		/>
 
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="styles.css" />
+		<script src="script.js"></script>
 		<title>How to Chess</title>
 	</head>
 	<body>
@@ -26,7 +28,7 @@
 			<div class="scroll_indicator"></div>
 		</div>
 		<div class="step">
-			<div class="left">
+			<div class="left" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-out">
 				<h1>Setup.</h1>
 				<h2>The Gateway to Mastery</h2>
 				<p>
@@ -38,31 +40,16 @@
 					draw. To begin, set up your the board as shown in the image. draw.
 					<br>
 					<br>
-					We'll see how end in my detail later. For now, let's explore how each
+					We'll see how games can end in more detail later. For now, let's explore how each
 					piece moves.
 				</p>
 			</div>
-			<div class="right">
-				<img src="assets/board200.png" alt="board" style="width: 40vw" />
+			<div class="right" data-aos="fade" data-aos-offset="500" data-aos-duration="1500" data-aos-easing="ease-in-out">
+				<img src="assets/boardsetup.jpg" alt="board" style="width: 40vw" />
 			</div>
 		</div>
 		<div class="step">
-			<div class="left">
-				<h1>The Pawn.</h1>
-				<h2>Small, Yet Mighty</h2>
-				<p>
-					The pawn is the most basic chess piece. Each pawn can  move forward one square at a time, except on its
-					very first move where it has the option to move two squares forward.
-					<br>
-					<br>
-					Pawns may capture enemy pieces directly diagonally in front of them, taking their place.
-					<br>
-					<br>
-					When a pawn reaches the opposite end of the board, it is promoted to
-					any other piece (except a king), usually a queen.
-				</p>
-			</div>
-			<div class="right">
+			<div class="left" data-aos="fade" data-aos-offset="500" data-aos-duration="1500" data-aos-easing="ease-in-out">
 				<iframe
 					name="iframe1"
 					id="12287437"
@@ -72,28 +59,49 @@
 					src="//www.chess.com/emboard?id=12287437"
 				></iframe>
 				<script>
-					window.onload = () => {
-						frames["iframe1"].document.getElementsByClassName(
-							"embed-diagrams-play-at-chess"
-						)[0].style.display = "none";
-					};
-
 					window.addEventListener("message", (e) => {
 						e["data"] &&
 							"12287437" === e["data"]["id"] &&
 							document.getElementById(`${e["data"]["id"]}`) &&
 							(document.getElementById(`${e["data"]["id"]}`).style.height = `${
 								e["data"]["frameHeight"] + 37
-							}px`) &&
-							(document.getElementsByClassName(
-								"embed-diagrams-play-at-chess"
-							)[0].style.display = "none");
+							}px`)
 					});
 				</script>
 			</div>
+			<div class="right" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-out">
+				<h1>The Pawn.</h1>
+				<h2>Small, Yet Mighty</h2>
+				<p>
+					The pawn is the most basic chess piece. Each pawn can  move forward one square at a time, except on its
+					very first move where it has the option to move two squares forward. Pawns may capture enemy pieces directly diagonally in front of them, taking their place.
+					<br>
+					<br>
+					When a pawn reaches the opposite end of the board, it is promoted to
+					any other piece (except a king), usually a queen.
+					<br>
+					<br>
+					Try the puzzle on the left - can you find the quickest way to promote your pawn?
+				</p>
+			</div>
 		</div>
 		<div class="step">
-			<div class="left">
+			<div class="left" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-out">
+				<h1>The Knight.</h1>
+				<h2>The Trickster of the Board</h2>
+				<p>
+					A knight moves in an L-shape: two squares in one direction (either
+					horizontally or vertically) and then one square perpendicular, or vice
+					versa. It captures enemy pieces by landing on their square.
+					<br>
+					<br>
+					Another unique property about the knight is that it is the only piece that can jump over other pieces.
+					<br>
+					<br>
+					Try to solve the puzzle on the left - can you think of a knight move that captures a piece and checkmates the king?
+				</p>
+			</div>
+			<div class="right" data-aos="fade" data-aos-offset="500" data-aos-duration="1500" data-aos-easing="ease-in-out">
 				<iframe
 					id="12290825"
 					allowtransparency="true"
@@ -112,24 +120,12 @@
 					});
 				</script>
 			</div>
-			<div class="right">
-				<h1>The Knight.</h1>
-				<h2>The Trickster of the Board</h2>
-				<p>
-					A knight moves in an L-shape: two squares in one direction (either
-					horizontally or vertically) and then one square perpendicular, or vice
-					versa. It captures enemy pieces by landing on their square.
-					<br>
-					<br>
-					Another unique property about the knight is that it is the only piece that can jump over other pieces.
-					<br>
-					<br>
-					Try to solve the puzzle on the left - can you think of a knight move that captures a piece and checkmates the king?
-				</p>
-			</div>
 		</div>
 		<div class="step">
-			<div class="left">
+			<div class="left" data-aos="fade" data-aos-offset="500" data-aos-duration="1500" data-aos-easing="ease-in-out">
+				<iframe id="12291221" allowtransparency="true" frameborder="0" style="border:none;" src="//www.chess.com/emboard?id=12291221"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12291221"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+37}px`)});</script>
+			</div>
+			<div class="right" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-out">
 				<h1>The Rook.</h1>
 				<h2>Strength in Simplicity</h2>
 				<p>
@@ -142,15 +138,9 @@
 					Try the puzzle on the right - can you find winning rook moves that capture material and win the game?
 				</p>
 			</div>
-			<div class="right">
-				<iframe id="12291221" allowtransparency="true" frameborder="0" style="border:none;" src="//www.chess.com/emboard?id=12291221"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12291221"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+37}px`)});</script>
-			</div>
 		</div>
 		<div class="step">
-			<div class="left">
-				<iframe id="12291259" allowtransparency="true" frameborder="0" style="border:none;" src="//www.chess.com/emboard?id=12291259"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12291259"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+37}px`)});</script>
-			</div>
-			<div class="right">
+			<div class="left" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-out">
 				<h1>The Bishop.</h1>
 				<h2>Long-Range Diagonal Mastery</h2>
 				<p>
@@ -163,9 +153,15 @@
 					Try the puzzle on the left - can you find a sneaky bishop move that checkmates the king?
 				</p>
 			</div>
+			<div class="right" data-aos="fade" data-aos-offset="500" data-aos-duration="1500" data-aos-easing="ease-in-out">
+				<iframe id="12291259" allowtransparency="true" frameborder="0" style="border:none;" src="//www.chess.com/emboard?id=12291259"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12291259"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+37}px`)});</script>
+			</div>
 		</div>
 		<div class="step">
-			<div class="left">
+			<div class="left" data-aos="fade" data-aos-offset="500" data-aos-duration="1500" data-aos-easing="ease-in-out">
+				<iframe id="12291289" allowtransparency="true" frameborder="0" style="border:none;" src="//www.chess.com/emboard?id=12291289"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12291289"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+37}px`)});</script>
+			</div>
+			<div class="right" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-out">
 				<h1>The Queen.</h1>
 				<h2>The Powerhouse</h2>
 				<p>
@@ -178,15 +174,9 @@
 					Try the puzzle on the right - can you find the quickest way for the queen to capture all the pawns?
 				</p>
 			</div>
-			<div class="right">
-				<iframe id="12291289" allowtransparency="true" frameborder="0" style="border:none;" src="//www.chess.com/emboard?id=12291289"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12291289"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+37}px`)});</script>
-			</div>
 		</div>
 		<div class="step">
-			<div class="left">
-				<iframe id="12291329" allowtransparency="true" frameborder="0" style="border:none;" src="//www.chess.com/emboard?id=12291329"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12291329"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+37}px`)});</script>
-			</div>
-			<div class="right">
+			<div class="left" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-out">
 				<h1>The King.</h1>
 				<h2>The Heart of the Game</h2>
 				<p>
@@ -200,6 +190,13 @@
 					Try the puzzle on the left - can you catch up to the black pawn before it promotes?
 				</p>
 			</div>
+			<div class="right" data-aos="fade" data-aos-offset="500" data-aos-duration="1500" data-aos-easing="ease-in-out">
+				<iframe id="12291329" allowtransparency="true" frameborder="0" style="border:none;" src="//www.chess.com/emboard?id=12291329"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12291329"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+37}px`)});</script>
+			</div>
 		</div>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+		  AOS.init();
+		</script>
 	</body>
 </html>
