@@ -85,7 +85,6 @@ body {
 .left, .right {
 	width: calc(50% - 20px);
 	height: 100%;
-	padding-top: 5em;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

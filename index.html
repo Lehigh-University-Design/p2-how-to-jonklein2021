@@ -207,56 +207,6 @@
 					</script>
 				</div>
 			</div>
-			<div class="step" id="rook">
-				<div
-					class="left"
-					data-aos="fade"
-					data-aos-offset="500"
-					data-aos-duration="1500"
-					data-aos-easing="ease-in-out"
-				>
-					<iframe
-						id="12291221"
-						allowtransparency="true"
-						frameborder="0"
-						style="border: none"
-						src="//www.chess.com/emboard?id=12291221"
-					></iframe>
-					<script>
-						window.addEventListener("message", (e) => {
-							e["data"] &&
-								"12291221" === e["data"]["id"] &&
-								document.getElementById(`${e["data"]["id"]}`) &&
-								(document.getElementById(
-									`${e["data"]["id"]}`
-								).style.height = `${e["data"]["frameHeight"] + 37}px`);
-						});
-					</script>
-				</div>
-				<div
-					class="right"
-					data-aos="fade-left"
-					data-aos-duration="500"
-					data-aos-easing="ease-in-out"
-				>
-					<h1>The Rook.</h1>
-					<h2>Strength in Simplicity</h2>
-					<p>
-						A rook can move any number of squares along a row or column, but it
-						cannot jump over other pieces. It can capture an enemy piece by
-						moving into its square.
-						<br />
-						<br />
-						Along with the king, a rook can participate in castling, a special
-						move that improves the king's safety. We'll show how to do this in a
-						later section.
-						<br />
-						<br />
-						Try the puzzle on the right - can you find winning rook moves that
-						capture material and win the game?
-					</p>
-				</div>
-			</div>
 			<div class="step" id="bishop">
 				<div
 					class="left"
@@ -299,6 +249,56 @@
 						window.addEventListener("message", (e) => {
 							e["data"] &&
 								"12291259" === e["data"]["id"] &&
+								document.getElementById(`${e["data"]["id"]}`) &&
+								(document.getElementById(
+									`${e["data"]["id"]}`
+								).style.height = `${e["data"]["frameHeight"] + 37}px`);
+						});
+					</script>
+				</div>
+			</div>
+			<div class="step" id="rook">
+				<div
+					class="left"
+					data-aos="fade"
+					data-aos-offset="500"
+					data-aos-duration="1500"
+					data-aos-easing="ease-in-out"
+				>
+					<h1>The Rook.</h1>
+					<h2>Strength in Simplicity</h2>
+					<p>
+						A rook can move any number of squares along a row or column, but it
+						cannot jump over other pieces. It can capture an enemy piece by
+						moving into its square.
+						<br />
+						<br />
+						Along with the king, a rook can participate in castling, a special
+						move that improves the king's safety. We'll show how to do this in a
+						later section.
+						<br />
+						<br />
+						Try the puzzle on the right - can you find winning rook moves that
+						capture material and win the game?
+					</p>
+				</div>
+				<div
+					class="right"
+					data-aos="fade-left"
+					data-aos-duration="500"
+					data-aos-easing="ease-in-out"
+				>
+					<iframe
+						id="12291221"
+						allowtransparency="true"
+						frameborder="0"
+						style="border: none"
+						src="//www.chess.com/emboard?id=12291221"
+					></iframe>
+					<script>
+						window.addEventListener("message", (e) => {
+							e["data"] &&
+								"12291221" === e["data"]["id"] &&
 								document.getElementById(`${e["data"]["id"]}`) &&
 								(document.getElementById(
 									`${e["data"]["id"]}`
