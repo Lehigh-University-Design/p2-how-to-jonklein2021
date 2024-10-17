@@ -25,43 +25,49 @@
 		<div class="sidebar">
 			<a href="#setup">
 				<div class="sidebar_child">
-					<img src="assets/BxBxsChess.png" alt="board">
+					<img src="assets/BxBxsChess.png" alt="board" />
 				</div>
 			</a>
-			<hr>
+			<hr />
 			<a href="#pawn">
 				<div class="sidebar_child">
-					<img src="assets/pieces/wp.png" alt="wp">
+					<img src="assets/pieces/wp.png" alt="wp" />
 				</div>
 			</a>
-			<hr>
+			<hr />
 			<a href="#knight">
 				<div class="sidebar_child">
-					<img src="assets/pieces/wn.png" alt="wn">
+					<img src="assets/pieces/wn.png" alt="wn" />
 				</div>
 			</a>
-			<hr>
-			<a href="#rook">
-				<div class="sidebar_child">
-					<img src="assets/pieces/wr.png" alt="wr">
-				</div>
-			</a>
-			<hr>
+			<hr />
 			<a href="#bishop">
 				<div class="sidebar_child">
-					<img src="assets/pieces/wb.png" alt="wb">
+					<img src="assets/pieces/wb.png" alt="wb" />
 				</div>
 			</a>
-			<hr>
+			<hr />
+			<a href="#rook">
+				<div class="sidebar_child">
+					<img src="assets/pieces/wr.png" alt="wr" />
+				</div>
+			</a>
+			<hr />
 			<a href="#queen">
 				<div class="sidebar_child">
-					<img src="assets/pieces/wq.png" alt="wq">
+					<img src="assets/pieces/wq.png" alt="wq" />
 				</div>
 			</a>
-			<hr>
+			<hr />
 			<a href="#king">
 				<div class="sidebar_child">
-					<img src="assets/pieces/wk.png" alt="wk">
+					<img src="assets/pieces/wk.png" alt="wk" />
+				</div>
+			</a>
+			<hr />
+			<a href="#checkmate">
+				<div class="sidebar_child">
+					<img src="assets/IconParkOutlineScoreboard.svg" alt="score" />
 				</div>
 			</a>
 		</div>
@@ -78,7 +84,7 @@
 			<div class="step" id="setup">
 				<div
 					class="left"
-					data-aos="fade-left"
+					data-aos="fade-right"
 					data-aos-duration="500"
 					data-aos-easing="ease-in-out"
 				>
@@ -86,13 +92,13 @@
 					<h2>The Gateway to Mastery</h2>
 					<p>
 						To get started, you'll need a chess board and a friend (optional).
-						<br />
-						<br />
+						<br>
+						<br>
 						In chess, players alternate turns, the player with the white pieces
 						always starting first. This continues until a player wins or they
 						draw. To begin, set up your the board as shown in the image. draw.
-						<br />
-						<br />
+						<br>
+						<br>
 						We'll see how games can end in more detail later. For now, let's
 						explore how each piece moves.
 					</p>
@@ -136,7 +142,7 @@
 				</div>
 				<div
 					class="right"
-					data-aos="fade-right"
+					data-aos="fade-left"
 					data-aos-duration="500"
 					data-aos-easing="ease-in-out"
 				>
@@ -147,14 +153,14 @@
 						one square at a time, except on its very first move where it has the
 						option to move two squares forward. Pawns may capture enemy pieces
 						directly diagonally in front of them, taking their place.
-						<br />
-						<br />
+						<br>
+						<br>
 						When a pawn reaches the opposite end of the board, it is promoted to
 						any other piece (except a king), usually a queen.
-						<br />
-						<br />
+						<br>
+						<br>
 						Try the puzzle on the left - can you find the quickest way to
-						promote your pawn?
+						promote your pawn to a queen?
 					</p>
 				</div>
 			</div>
@@ -171,12 +177,12 @@
 						A knight moves in an L-shape: two squares in one direction (either
 						horizontally or vertically) and then one square perpendicular, or
 						vice versa. It captures enemy pieces by landing on their square.
-						<br />
-						<br />
+						<br>
+						<br>
 						Another unique property about the knight is that it is the only
 						piece that can jump over other pieces.
-						<br />
-						<br />
+						<br>
+						<br>
 						Try to solve the puzzle on the left - can you think of a knight move
 						that captures a piece and checkmates the king?
 					</p>
@@ -210,29 +216,6 @@
 			<div class="step" id="bishop">
 				<div
 					class="left"
-					data-aos="fade-right"
-					data-aos-duration="500"
-					data-aos-easing="ease-in-out"
-				>
-					<h1>The Bishop.</h1>
-					<h2>Long-Range Diagonal Mastery</h2>
-					<p>
-						A bishop can move any number of squares diagonally, but it cannot
-						jump over other pieces. It captures an enemy piece by moving into
-						its square.
-						<br />
-						<br />
-						Notice that it is restricted to the color of the square it starts on
-						(either light or dark) for the entire game, as no diagonal path can
-						cross between the two colors.
-						<br />
-						<br />
-						Try the puzzle on the left - can you find a sneaky bishop move that
-						checkmates the king?
-					</p>
-				</div>
-				<div
-					class="right"
 					data-aos="fade"
 					data-aos-offset="500"
 					data-aos-duration="1500"
@@ -256,13 +239,35 @@
 						});
 					</script>
 				</div>
+				<div
+					class="right"
+					data-aos="fade-left"
+					data-aos-duration="500"
+					data-aos-easing="ease-in-out"
+				>
+					<h1>The Bishop.</h1>
+					<h2>Long-Range Diagonal Mastery</h2>
+					<p>
+						A bishop can move any number of squares diagonally, but it cannot
+						jump over other pieces. It captures an enemy piece by moving into
+						its square.
+						<br>
+						<br>
+						Notice that it is restricted to the color of the square it starts on
+						(either light or dark) for the entire game, as no diagonal path can
+						cross between the two colors.
+						<br>
+						<br>
+						Try the puzzle on the left - can you find a sneaky bishop move that
+						checkmates the king?
+					</p>
+				</div>
 			</div>
 			<div class="step" id="rook">
 				<div
 					class="left"
-					data-aos="fade"
-					data-aos-offset="500"
-					data-aos-duration="1500"
+					data-aos="fade-right"
+					data-aos-duration="500"
 					data-aos-easing="ease-in-out"
 				>
 					<h1>The Rook.</h1>
@@ -271,21 +276,22 @@
 						A rook can move any number of squares along a row or column, but it
 						cannot jump over other pieces. It can capture an enemy piece by
 						moving into its square.
-						<br />
-						<br />
+						<br>
+						<br>
 						Along with the king, a rook can participate in castling, a special
 						move that improves the king's safety. We'll show how to do this in a
 						later section.
-						<br />
-						<br />
+						<br>
+						<br>
 						Try the puzzle on the right - can you find winning rook moves that
 						capture material and win the game?
 					</p>
 				</div>
 				<div
 					class="right"
-					data-aos="fade-left"
-					data-aos-duration="500"
+					data-aos="fade"
+					data-aos-offset="500"
+					data-aos-duration="1500"
 					data-aos-easing="ease-in-out"
 				>
 					<iframe
@@ -344,13 +350,13 @@
 					<p>
 						The queen is the most powerful piece on the board; it can move like
 						a bishop and a rook.
-						<br />
-						<br />
+						<br>
+						<br>
 						A queen can move any number of squares in any direction —
 						vertically, horizontally, or diagonally, but cannot jump over
 						pieces. It captures by moving into the square of an enemy piece.
-						<br />
-						<br />
+						<br>
+						<br>
 						Try the puzzle on the right - can you find the quickest way for the
 						queen to capture all the pawns?
 					</p>
@@ -372,12 +378,12 @@
 						The king can also perform castling with a rook, moving two squares
 						towards the rook, while the rook moves to the square the king passed
 						through.
-						<br />
-						<br />
+						<br>
+						<br>
 						The game ends in checkmate if the king is unable to escape a threat
 						of capture.
-						<br />
-						<br />
+						<br>
+						<br>
 						Try the puzzle on the left - can you catch up to the black pawn
 						before it promotes?
 					</p>
@@ -449,8 +455,8 @@
 						block the threat with another piece. An extension of this rule is
 						that no player may "put themselves in check" because it would allow
 						the other player to capture their king on their turn.
-						<br />
-						<br />
+						<br>
+						<br>
 						If a player's king is in check and there is no legal move to get out
 						of check, the game is over. This is called checkmate. In several of
 						the previous puzzles, the winning move checkmated the opponent's
